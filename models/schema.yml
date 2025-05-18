@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: tpch_sample
+    database: DATAVAULT_SOURCE
+    schema: TPCH_SF{{ var('tpch_size', 10) }}
+    tables:
+
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: NATION
+      - name: REGION
