@@ -53,12 +53,12 @@ models:
       hubs:
         +tags:
           - 'hub'
-    #   links:
-    #     +tags:
-    #       - 'link'
-    #   sats:
-    #     +tags:
-    #       - 'satellite'
-    #   t_links:
-    #     +tags:
-    #       - 't_link'
+      links:
+        +tags:
+          - 'link'
+      sats:
+        +tags:
+          - 'satellite'
+    buisness_vault:
+      +schema: buisness_vault
+      +materialized: view

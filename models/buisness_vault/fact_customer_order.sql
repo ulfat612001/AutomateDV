@@ -1,0 +1,5 @@
+SELECT LNK.LOAD_DATE              AS EFFECTIVE_DTS,
+       LNK.RECORD_SOURCE              AS RECORD_SOURCE,
+       LNK.CUSTOMER_PK AS DIM_CUSTOMER_KEY,
+       LNK.ORDER_PK    AS DIM_ORDER_KEY
+FROM   {{ref('link_customer_order')}} AS LNK
